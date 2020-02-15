@@ -1,6 +1,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* Creates responsive full screen background image */
@@ -22,6 +23,7 @@ body, html {
   background-color: white;
   padding: 1em;
   width: 50%;
+  height: 30%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -32,4 +34,13 @@ body, html {
 
 h1 {
   display: inline-block !important;
+  color: #552021;
+  font-size: 3em;
+  font-family: 'Dokdo', cursive;
+}
+
+/* Button styling */
+.btn {
+  font-family: 'Dokdo', cursive;
+  font-size: 1.5em;
 }
