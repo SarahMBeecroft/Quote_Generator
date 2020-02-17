@@ -127,15 +127,19 @@ var quoteArr = [
   "It's the hardest working liver in the Galaxy, Morty, and now it has a hole in it."
 ];
 
-
-
 // Audio for button sound
-let buttonSound = document.createElement("audio")
-buttonSound.setAttribute("src", "owee.wav")
+let buttonSound = document.createElement("audio");
+buttonSound.setAttribute("src", "owee.wav");
+
+/* Click function for oooowee noise */
+$("#OOOOWEEE").click(function() {
+  $(buttonSound).trigger("play");
+});
 
 /* Click function to give user new random quote */
 $("#newQuote").click(function() {
-  $(buttonSound).trigger('play');
   let x = Math.floor(Math.random() * quoteArr.length);
   $("#quote").text(quoteArr[x]);
 });
+
+
