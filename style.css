@@ -53,7 +53,7 @@ h1 {
 
 
 /* Media queries */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1000px) {
   /* For mobile phones: */
   /* Styles main container */
 .container-fluid {
@@ -67,5 +67,11 @@ h1 {
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   text-align: center !important;
+}
+
+/* Button styling */
+.btn {
+  font-family: 'Dokdo', cursive;
+  font-size: 1em;
 }
 }
