@@ -127,13 +127,23 @@ var quoteArr = [
   "It's the hardest working liver in the Galaxy, Morty, and now it has a hole in it."
 ];
 
-// Audio for button sound
-let buttonSound = document.createElement("audio");
-buttonSound.setAttribute("src", "owee.wav");
+
+// Audio for wubba lubba dub dub sound
+let wubbaSound = document.createElement("audio");
+wubbaSound.setAttribute("src", "wubba.wav");
+
+// Audio for ooowee sound
+let ooooweeSound = document.createElement("audio");
+ooooweeSound.setAttribute("src", "owee.wav");
+
+/* Click function for wubba lubba dub dub noise */
+$("#WUBBA").click(function() {
+  $(wubbaSound).trigger("play");
+});
 
 /* Click function for oooowee noise */
 $("#OOOOWEEE").click(function() {
-  $(buttonSound).trigger("play");
+  $(ooooweeSound).trigger("play");
 });
 
 /* Click function to give user new random quote */
