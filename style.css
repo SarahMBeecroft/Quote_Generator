@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -8,10 +9,10 @@ body, html {
 /* Creates responsive full screen background image */
 .bg {
   /* The image used */
-  background-image: url("rickandmorty.jpg");
+  background-image: url('rickandmorty.jpg');
 
   /* Full height */
-  height: 100%; 
+  height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -21,7 +22,8 @@ body, html {
 
 /* Styles main container */
 .container-fluid {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: solid 1px #552021;
   padding: 1em;
   max-width: 50%;
   max-height: 60%;
@@ -48,30 +50,30 @@ h1 {
 .btn {
   font-family: 'Dokdo', cursive;
   font-size: 1.5em;
-  margin: 1em .2em 1em .2em;
+  margin: 1em 0.2em 1em 0.2em;
 }
-
 
 /* Media queries */
 @media only screen and (max-width: 1000px) {
   /* For mobile phones: */
   /* Styles main container */
-.container-fluid {
-  background-color: white;
-  padding: 1em;
-  max-width: 90%;
-  max-height: 90%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  text-align: center !important;
-}
+  .container-fluid {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px #552021;
+    padding: 1em;
+    max-width: 90%;
+    max-height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    text-align: center !important;
+  }
 
-/* Button styling */
-.btn {
-  font-family: 'Dokdo', cursive;
-  font-size: 1em;
-}
+  /* Button styling */
+  .btn {
+    font-family: 'Dokdo', cursive;
+    font-size: 1em;
+  }
 }
